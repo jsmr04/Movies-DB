@@ -1,0 +1,78 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jsmr.moviesdb.Movies"
+    >
+    <item
+        android:id="@+id/empty"
+        android:icon="@drawable/ic_menu_white_48dp"
+        android:orderInCategory="101"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/populares"
+                android:orderInCategory="100"
+                android:visible="true"
+                app:showAsAction="never"
+                android:title="Populares" />
+
+            <item
+                android:id="@+id/en_cines"
+                android:orderInCategory="100"
+                android:visible="true"
+                app:showAsAction="never"
+                android:title="En Cines" />
+
+            <item
+                android:id="@+id/otras"
+                android:orderInCategory="100"
+                android:visible="true"
+                app:showAsAction="never"
+                android:title="Generos">
+                <menu>
+                    <item
+                        android:id="@+id/accion"
+                        android:orderInCategory="100"
+                        android:visible="true"
+                        app:showAsAction="never"
+                        android:title="Acción" />
+
+                    <item
+                        android:id="@+id/aventura"
+                        android:orderInCategory="100"
+                        android:visible="true"
+                        app:showAsAction="never"
+                        android:title="Aventura" />
+
+                    <item
+                        android:id="@+id/comedia"
+                        android:orderInCategory="100"
+                        android:visible="true"
+                        app:showAsAction="never"
+                        android:title="Comedia" />
+                    <item
+                        android:id="@+id/documental"
+                        android:orderInCategory="100"
+                        android:visible="true"
+                        app:showAsAction="never"
+                        android:title="Documental" />
+                    <item
+                        android:id="@+id/drama"
+                        android:orderInCategory="100"
+                        android:visible="true"
+                        app:showAsAction="never"
+                        android:title="Drama" />
+                    <item
+                        android:id="@+id/fantasia"
+                        android:orderInCategory="100"
+                        android:visible="true"
+                        app:showAsAction="never"
+                        android:title="Fantasía" />
+
+                </menu>
+            </item>
+        </menu>
+    </item>
+
+
+</menu>

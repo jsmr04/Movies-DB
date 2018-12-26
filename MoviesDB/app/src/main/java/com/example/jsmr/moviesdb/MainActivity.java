@@ -10,11 +10,15 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.support.v7.widget.Toolbar;
 
 import com.example.jsmr.moviesdb.Utilities.Network;
 
@@ -29,16 +33,22 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
+import java.util.zip.Inflater;
 
 public class MainActivity extends AppCompatActivity {
     ProgressBar pb_progress;
     RecyclerView rv_list;
+    Toolbar tb_main;
     List<Movie> movies = new ArrayList<>();
     MovieAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        tb_main = (Toolbar)findViewById(R.id.my_toolbar);
+        tb_main.setTitle("MovieDB - Populares");
+        setSupportActionBar(tb_main);
 
         try {
             rv_list = findViewById(R.id.rv_movies);
@@ -80,6 +90,87 @@ public class MainActivity extends AppCompatActivity {
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_movies, menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if(id==R.id.populares){
+            movies.clear();
+            tb_main.setTitle("MovieDB - Populares");
+            URL url = Network.buildTrendingUrl();
+            MovieDBTask task = new MovieDBTask();
+            task.execute(url);
+
+            return true;
+        }else if(id==R.id.en_cines){
+            movies.clear();
+            tb_main.setTitle("MovieDB - En Cines");
+            URL url = Network.buildInTeathersUrl();
+            MovieDBTask task = new MovieDBTask();
+            task.execute(url);
+
+            return true;
+        }else if(id==R.id.accion){
+            movies.clear();
+            tb_main.setTitle("MovieDB - Acción" );
+            URL url = Network.buildGenreUrl(28);
+            MovieDBTask task = new MovieDBTask();
+            task.execute(url);
+
+            return true;
+        }else if(id==R.id.aventura) {
+            movies.clear();
+            tb_main.setTitle("MovieDB - Aventura");
+            URL url = Network.buildGenreUrl(12);
+            MovieDBTask task = new MovieDBTask();
+            task.execute(url);
+
+            return true;
+        }else if(id==R.id.comedia) {
+            movies.clear();
+            tb_main.setTitle("MovieDB - Comedia");
+            URL url = Network.buildGenreUrl(35);
+            MovieDBTask task = new MovieDBTask();
+            task.execute(url);
+
+            return true;
+        }else if(id==R.id.documental) {
+            movies.clear();
+            tb_main.setTitle("MovieDB - Documental");
+            URL url = Network.buildGenreUrl(99);
+            MovieDBTask task = new MovieDBTask();
+            task.execute(url);
+
+            return true;
+        }else if(id==R.id.drama) {
+            movies.clear();
+            tb_main.setTitle("MovieDB - Drama");
+            URL url = Network.buildGenreUrl(18);
+            MovieDBTask task = new MovieDBTask();
+            task.execute(url);
+
+            return true;
+        }else if(id==R.id.fantasia) {
+            movies.clear();
+            tb_main.setTitle("MovieDB - Fantasía");
+            URL url = Network.buildGenreUrl(14);
+            MovieDBTask task = new MovieDBTask();
+            task.execute(url);
+
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     public class MovieDBTask extends AsyncTask<URL, Void, String> {
@@ -147,5 +238,4 @@ public class MainActivity extends AppCompatActivity {
             return response;
         }
     }
-
 }
