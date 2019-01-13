@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }else if(id==R.id.en_cines){
             movies.clear();
-            tb_main.setTitle("MovieDB - En Cines");
+            tb_main.setTitle("MovieDB - Liberados Hoy");
             URL url = Network.buildInTeathersUrl();
             MovieDBTask task = new MovieDBTask();
             task.execute(url);

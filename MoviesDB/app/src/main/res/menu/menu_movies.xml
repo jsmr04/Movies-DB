@@ -21,7 +21,7 @@
                 android:orderInCategory="100"
                 android:visible="true"
                 app:showAsAction="never"
-                android:title="En Cines" />
+                android:title="Liberados Hoy" />
 
             <item
                 android:id="@+id/otras"
