@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".RoomApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_movie"
         android:label="@string/app_name"
@@ -14,7 +15,6 @@
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,13 +22,19 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".DetailActivity"
-            android:screenOrientation="portrait">
-        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Movies"
-            android:label="@string/title_activity_movies">
-        </activity>
+            android:label="@string/title_activity_movies" />
+
+        <service
+            android:name=".Utilities.NotificationJobSchedule"
+            android:label="MovieDB Notification"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".SettingActivity" />
     </application>
 
 </manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_trending"
+        android:enabled="true"
+        android:icon="@drawable/ic_trending_white_24dp"
+        android:title="Tendencias">
+
+    </item>
+    <item
+        android:id="@+id/nav_release"
+        android:enabled="true"
+        android:icon="@drawable/ic_today_white_48dp"
+        android:title="Hoy">
+
+    </item>
+    <item
+        android:id="@+id/nav_favorites"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite_white_48dp"
+        android:title="Favoritos"></item>
+    <item
+        android:id="@+id/nav_genre"
+        android:enabled="true"
+        android:icon="@drawable/ic_local_movies_white_48dp"
+        android:title="Géneros"></item>
+
+</menu>

@@ -10,67 +10,11 @@
         app:showAsAction="always">
         <menu>
             <item
-                android:id="@+id/populares"
-                android:orderInCategory="100"
+                android:id="@+id/configurar"
+                android:orderInCategory="105"
                 android:visible="true"
                 app:showAsAction="never"
-                android:title="Populares" />
-
-            <item
-                android:id="@+id/en_cines"
-                android:orderInCategory="100"
-                android:visible="true"
-                app:showAsAction="never"
-                android:title="Liberados Hoy" />
-
-            <item
-                android:id="@+id/otras"
-                android:orderInCategory="100"
-                android:visible="true"
-                app:showAsAction="never"
-                android:title="Generos">
-                <menu>
-                    <item
-                        android:id="@+id/accion"
-                        android:orderInCategory="100"
-                        android:visible="true"
-                        app:showAsAction="never"
-                        android:title="Acción" />
-
-                    <item
-                        android:id="@+id/aventura"
-                        android:orderInCategory="100"
-                        android:visible="true"
-                        app:showAsAction="never"
-                        android:title="Aventura" />
-
-                    <item
-                        android:id="@+id/comedia"
-                        android:orderInCategory="100"
-                        android:visible="true"
-                        app:showAsAction="never"
-                        android:title="Comedia" />
-                    <item
-                        android:id="@+id/documental"
-                        android:orderInCategory="100"
-                        android:visible="true"
-                        app:showAsAction="never"
-                        android:title="Documental" />
-                    <item
-                        android:id="@+id/drama"
-                        android:orderInCategory="100"
-                        android:visible="true"
-                        app:showAsAction="never"
-                        android:title="Drama" />
-                    <item
-                        android:id="@+id/fantasia"
-                        android:orderInCategory="100"
-                        android:visible="true"
-                        app:showAsAction="never"
-                        android:title="Fantasía" />
-
-                </menu>
-            </item>
+                android:title="Configurar" />
         </menu>
     </item>
 

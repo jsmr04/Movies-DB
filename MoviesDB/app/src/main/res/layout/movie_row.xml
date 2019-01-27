@@ -25,6 +25,7 @@
 
             <ImageView
                 android:id="@+id/poster"
+                android:transitionName="poster"
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
@@ -36,6 +37,7 @@
 
             <TextView
                 android:id="@+id/title"
+                android:transitionName="title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/poster"
@@ -52,7 +54,9 @@
             >
             <ImageView
                 android:layout_height="20dp"
+                android:id="@+id/star"
                 android:layout_width="20dp"
+                android:transitionName="star"
                 android:scaleType="fitXY"
                 android:layout_margin="2dp"
                 android:layout_gravity="center"
@@ -60,6 +64,7 @@
                 />
             <TextView
                 android:id="@+id/vote_average"
+                android:transitionName="vote"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
@@ -70,6 +75,7 @@
 
             <TextView
                 android:id="@+id/year"
+                android:transitionName="year"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"

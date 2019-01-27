@@ -19,22 +19,52 @@
         app:subtitleTextColor="@color/CardViewLetter">
     </android.support.v7.widget.Toolbar>
 
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
     <ProgressBar
         android:id="@+id/progress_circular"
-        android:visibility="invisible"
-        android:layout_below="@id/my_toolbar"
-        android:layout_centerHorizontal="true"
         android:layout_width="64dp"
-        android:layout_height="64dp" />
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/rv_movies"
-        android:layout_below="@id/my_toolbar"
-        android:scrollbars="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_circular">
 
     </android.support.v7.widget.RecyclerView>
 
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="34dp"
+        android:elevation="4dp"
+        android:background="@color/CardViewBackground"
+        app:itemIconTint="@color/CardViewLetter"
+        app:itemTextColor="@color/CardViewLetter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_movies"
+        app:menu="@menu/nav">
 
+    </android.support.design.widget.BottomNavigationView>
+</android.support.constraint.ConstraintLayout>
 </RelativeLayout>

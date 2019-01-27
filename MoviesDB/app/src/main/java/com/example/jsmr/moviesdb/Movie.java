@@ -1,18 +1,13 @@
 package com.example.jsmr.moviesdb;
 
-import java.util.Date;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
 
-public class Movie {
-            /*
-            name
-            poster
-            backdrop
-            genre
-            time
-            date
-            vote_average
-         */
+@Entity
+public class Movie  {
 
+    @PrimaryKey
+    private int id ;
     private String title;
     private String overview;
     private String backdrop_path;
@@ -20,9 +15,9 @@ public class Movie {
     private String genre;
     private int year;
     private int time;
-    private Date date;
     private double vote_average;
 
+    public int getId() {return id;}
 
     public String getTitle() {
         return title;
@@ -52,13 +47,11 @@ public class Movie {
         return time;
     }
 
-    public Date getDate() {
-        return date;
-    }
-
     public double getVote_average() {
         return vote_average;
     }
+
+    public void setId(int id) {this.id = id;}
 
     public void setTitle(String title) {
         this.title = title;
@@ -70,10 +63,6 @@ public class Movie {
 
     public void setYear(int year) {
         this.year = year;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
     }
 
     public void setOverview(String overview) {
@@ -96,3 +85,5 @@ public class Movie {
         this.vote_average = vote_average;
     }
 }
+
+

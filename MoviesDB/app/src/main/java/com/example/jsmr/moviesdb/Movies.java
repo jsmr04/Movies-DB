@@ -66,9 +66,6 @@ public class Movies extends Activity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.populares) {
-            return true;
-        }
 
         return super.onOptionsItemSelected(item);
     }

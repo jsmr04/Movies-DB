@@ -2,5 +2,14 @@
     <string name="app_name">MoviesDB</string>
     <string name="title_activity_movies">Movies</string>
     <string name="action_settings">Settings</string>
+    <string name="notification_message">Has visto las últimas peliculas?</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string-array name="pref_col">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

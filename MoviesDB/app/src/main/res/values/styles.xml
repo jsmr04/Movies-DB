@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="actionMenuTextColor">@color/CardViewLetter</item>
         <item name="android:actionMenuTextColor">@color/CardViewLetter</item>
+        <item name="android:windowContentTransitions">true</item>
     </style>
     <style name="ActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
@@ -16,6 +17,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="actionMenuTextColor">@color/CardViewLetter</item>
         <item name="android:actionMenuTextColor">@color/CardViewLetter</item>
+        <item name="android:windowContentTransitions">true</item>
     </style>
 
 </resources>
