@@ -23,6 +23,22 @@
         android:id="@+id/nav_genre"
         android:enabled="true"
         android:icon="@drawable/ic_local_movies_white_48dp"
-        android:title="Géneros"></item>
+        android:title="Géneros">
+
+
+        <!--<menu>
+            <item
+                android:id="@+id/nav_adventure"
+                android:title="Aventura"
+                android:enabled="true">
+            </item>
+            <item
+                android:id="@+id/nav_drama"
+                android:title="Drama"
+                android:enabled="true">
+            </item>
+        </menu>-->
+    </item>
+
 
 </menu>
