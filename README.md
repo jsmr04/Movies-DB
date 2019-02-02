@@ -2,7 +2,7 @@
 Aplicación mobile que consume API de peliculas<br/>
 La API es https://api.themoviedb.org
 
-<b>Componentes utilizados</b>
+<b>Componentes utilizados</b><br/>
 Recycler View<br/>
 Card View<br/>
 Picasso<br/>
