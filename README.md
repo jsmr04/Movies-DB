@@ -3,13 +3,15 @@ Aplicación mobile que consume API de peliculas<br/>
 La API es https://api.themoviedb.org
 
 <b>Componentes utilizados</b><br/>
-Recycler View<br/>
-Card View<br/>
-Picasso<br/>
-Notifications<br/>
-Job Scheduler<br/>
-Room<br/>
-Share Preference<br/>
+<ul style="list-style-type:disc;">
+  <li>Recycler View</li>
+  <li>Card View</li>
+  <li>Picasso</li>
+  <li>Notifications</li>
+  <li>Job Scheduler</li>
+  <li>Room</li>
+  <li>Share Preference</li>
+</ul>
 
 <b>Peliculas Populares</b><br/>
 ![main](https://user-images.githubusercontent.com/3135326/52170527-57632f00-2722-11e9-90a1-ef4f2ecab196.png)
