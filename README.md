@@ -2,20 +2,29 @@
 Aplicación mobile que consume API de peliculas<br/>
 La API es https://api.themoviedb.org
 
-<b>Menu Principal</b><br/>
-![menu](https://user-images.githubusercontent.com/3135326/50428746-52dc6880-0890-11e9-9ef3-d585047cbd2c.JPG)
+<b>Componentes utilizados</b><br/>
+<ul style="list-style-type:disc;">
+  <li>Recycler View</li>
+  <li>Card View</li>
+  <li>Picasso</li>
+  <li>Notifications</li>
+  <li>Job Scheduler</li>
+  <li>Room</li>
+  <li>Share Preference</li>
+</ul>
 
 <b>Peliculas Populares</b><br/>
-![popular](https://user-images.githubusercontent.com/3135326/50428761-68ea2900-0890-11e9-9a10-a893ed1cc127.JPG)
+![main](https://user-images.githubusercontent.com/3135326/52170527-57632f00-2722-11e9-90a1-ef4f2ecab196.png)
 
 <b>Detalle</b><br/>
-![detalle](https://user-images.githubusercontent.com/3135326/50428772-71dafa80-0890-11e9-92f1-47a8b31bb41e.JPG)
+![detalle](https://user-images.githubusercontent.com/3135326/52170533-6f3ab300-2722-11e9-8069-0068cbeaa6f0.png)
+![detalle 2](https://user-images.githubusercontent.com/3135326/52170535-72ce3a00-2722-11e9-96bd-7f1767db97ef.png)
 
 <b>Peliculas En Cines</b><br/>
-![en cines](https://user-images.githubusercontent.com/3135326/50428766-6d164680-0890-11e9-9ee1-0dc4ec741798.JPG)
+![liberados](https://user-images.githubusercontent.com/3135326/52170530-65b14b00-2722-11e9-8422-946d3f3c0a48.png)
 
-<b>Sub Menu Generos</b><br/>
-![sub menu generos](https://user-images.githubusercontent.com/3135326/50428777-78697200-0890-11e9-941a-1fae2b444d73.JPG)
+<b>Favoritos</b><br/>
+![favoritos](https://user-images.githubusercontent.com/3135326/52170531-6b0e9580-2722-11e9-970a-0bd58859547f.png)
 
-<b>Genero</b><br/>
-![genero](https://user-images.githubusercontent.com/3135326/50428782-7bfcf900-0890-11e9-9dbd-66b16b1482a7.JPG)
+<b>Configuración</b><br/>
+![settings](https://user-images.githubusercontent.com/3135326/52170539-76fa5780-2722-11e9-9cec-7368d5e2fa29.png)
